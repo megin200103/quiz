@@ -1,0 +1,35 @@
+POST localhost:8080/question/api/check HTTP/1.1
+Content-Type: application/json
+
+{
+    "question_id": 15140,
+    "answer": "1896"
+}
+
+###
+
+GET localhost:8080/question/api/random HTTP/1.1
+
+###
+
+POST localhost:8080/game HTTP/1.1
+Content-Type: application/json
+
+{
+  "question_number": 2,
+  "min_difficulty": 100,
+  "max_difficulty": 1000
+}
+
+###
+
+GET localhost:8080/game/11/finish HTTP/1.1
+
+###
+
+POST localhost:8080/game/10/2/check HTTP/1.1
+Content-Type: application/json
+
+{
+  "answer": "beriberi"
+}
